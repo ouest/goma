@@ -42,15 +42,15 @@ import (
 )
 
 func main() {
-    // get goma state
+    // get SESAME state
     state := goma.State()
-    // get goma history
+    // get SESAME history
     history := goma.History(0, 10)
-    // lock goma
+    // lock SESAME
     goma.Lock("account_name")
-    // toggle goma
+    // toggle SESAME
     goma.Toggle("account_name")
-    // unlock goma
+    // unlock SESAME
     goma.Unlock("account_name")
 }
 ```
